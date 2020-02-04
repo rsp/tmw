@@ -91,10 +91,11 @@ WASI runtimes, Ethereum blockchain
 
 ```js
 (async () => {
-  const responsePromise = fetch('main.wasm');
-  const result = await WebAssembly.instantiateStreaming(responsePromise);
+  const res = fetch('main.wasm');
+  const result = await WebAssembly.instantiateStreaming(res);
   const { factorial } = result.instance.exports;
-  document.getElementById('container').textContent = factorial(10);
+  const x = factorial(10);
+  document.getElementById('container').textContent = x;
 })();
 ```
 
