@@ -149,6 +149,18 @@ $ deno run --allow-read=main.wasm deno.ts
 
 ---
 
+# AssemblyScript<br>supports
+
+Types:
+
+i32, u32, i64, u64, f32, f64, v128 plus some aliases
+
+Standard library:
+
+Array, ArrayBuffer, DataView, Date, Error, Map, Math, Number, Set, String, TypedArray
+
+---
+
 # WASM
 
 [webassembly.org](https://webassembly.org/)
