@@ -163,7 +163,8 @@ Array, ArrayBuffer, DataView, Date, Error, Map, Math, Number, Set, String, Typed
 
 # Null and Undefined
 
-Basic types cannot be nullable, but class and function types can.
+Basic types cannot be nullable, but class and function types can
+(but not by default).
 
 Appending `| null` declares a nullable type.
 
