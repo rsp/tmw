@@ -50,8 +50,6 @@ WASM
 
 ---
 
-WAT
-
 ```txt
 (module
   (type $t0 (func (param i32) (result i32)))
