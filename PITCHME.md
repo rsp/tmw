@@ -141,11 +141,9 @@ $ deno run --allow-read=main.wasm deno.ts
 
 # AssemblyScript vs TypeScript
 
-- no any
-- no undefined
-- no union types
+- no any, no undefined, no union types
 - no `let x = {}`
-- have to use `x = new Map<string, string>()`
+- use `x = new Map<string, string>()`
 - `===` is for identity comparisons (same object)
 - imported/exported functions cannot use all types yet
 
