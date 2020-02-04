@@ -1,7 +1,7 @@
 
 # TypeScript Meets WebAssembly
 
-Using AssemblyScript on the Frontend and Backend with Node.js and Deno in 2020
+Using AssemblyScript on the Frontend and<br>Backend with Node.js and Deno in 2020
 
 RAFAŁ POCZTARSKI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @POCZTARSKI
 ---
