@@ -24,6 +24,107 @@ Solomon Hykes, founder and CTO of Docker<br>March, 2019 [on Twitter](https://twi
 
 ---
 
+AssemblyScript
+
+```ts
+export function factorial(n: u32): u32 {
+  return n < 1 ? 1 : n * factorial(n - 1);
+}
+```
+
+---
+
+WASM
+
+```txt
+00000000: 0061 736d 0100 0000 0106 0160 017f 017f  .asm.......`....
+00000010: 0302 0100 0503 0100 0007 1602 066d 656d  .............mem
+00000020: 6f72 7902 0009 6661 6374 6f72 6961 6c00  ory...factorial.
+00000030: 000a 1901 1700 2000 4101 4904 7f41 0105  ...... .A.I..A..
+00000040: 2000 4101 6b10 0020 006c 0b0b 0021 1073   .A.k.. .l...!.s
+00000050: 6f75 7263 654d 6170 7069 6e67 5552 4c0f  ourceMappingURL.
+00000060: 2e2f 6d61 696e 2e77 6173 6d2e 6d61 70    ./main.wasm.map
+```
+
+111 bytes
+
+---
+
+WAT
+
+```txt
+(module
+  (type $t0 (func (param i32) (result i32)))
+  (func $factorial (export "factorial") (type $t0) (param $p0 i32) (result i32)
+    get_local $p0
+    i32.const 1
+    i32.lt_u
+    if $I0 (result i32)
+      i32.const 1
+    else
+      get_local $p0
+      i32.const 1
+      i32.sub
+      call $factorial
+      get_local $p0
+      i32.mul
+    end)
+  (memory $memory (export "memory") 0))
+```
+
+---
+
+Browser
+
+```js
+(async () => {
+  const responsePromise = fetch('main.wasm');
+  const result = await WebAssembly.instantiateStreaming(responsePromise);
+  const { factorial } = result.instance.exports;
+  document.getElementById('container').textContent = factorial(10);
+})();
+```
+
+---
+
+Node
+
+```js
+const fs = require('fs');
+
+fs.readFile('main.wasm', async (err, buffer) => {
+  const typedArray = new Uint8Array(buffer);
+  const module = new WebAssembly.Module(typedArray);
+  const instance = new WebAssembly.Instance(module);
+  const { factorial } = instance.exports;
+  console.log(factorial(10));
+});
+```
+
+```sh
+$ node node.js
+3628800
+```
+
+---
+
+Deno
+
+```ts
+const buffer = await Deno.readFile('main.wasm');
+const module = new WebAssembly.Module(buffer);
+const instance = new WebAssembly.Instance(module);
+const { factorial } = instance.exports;
+console.log(factorial(10));
+```
+
+```sh
+$ deno run --allow-read=main.wasm deno.ts
+3628800
+```
+
+---
+
 # WASM
 
 [webassembly.org](https://webassembly.org/)
