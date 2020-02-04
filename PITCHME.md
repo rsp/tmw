@@ -24,10 +24,6 @@ Solomon Hykes, founder and CTO of Docker<br>March, 2019 [on Twitter](https://twi
 
 ---
 
-# Writing
-
----
-
 # AssemblyScript
 
 ```ts
