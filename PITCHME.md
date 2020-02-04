@@ -145,7 +145,7 @@ $ deno run --allow-read=main.wasm deno.ts
 - no `let x = {}`
 - use `x = new Map<string, string>()`
 - `===` is for identity comparisons (same object)
-- imported/exported functions cannot use all types yet
+- exported functions cannot use all types yet
 
 ---
 
