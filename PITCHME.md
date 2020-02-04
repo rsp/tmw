@@ -270,7 +270,7 @@ Talks:
 
 # Questions?
 
-Slides: https://pocztarski.com/y20
+Slides: https://pocztarski.com/tmw
 
 ## Rafał Pocztarski
 
