@@ -204,6 +204,16 @@ WebAssembly System Interface
 
 ---
 
+# WAMR
+
+WebAssembly Micro Runtime
+
+[github.com/bytecodealliance/wasm-micro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime)
+
+Small runtime binary size (85K for interpreter and 50K for AoT) and low memory usage
+
+---
+
 # eWASM
 
 Ethereum WebAssembly
