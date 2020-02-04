@@ -52,8 +52,6 @@ export function factorial(n: u32): u32 {
 
 # WAT
 
-<small>
-
 ```txt
 (module
   (type $t0 (func (param i32) (result i32)))
@@ -74,8 +72,6 @@ export function factorial(n: u32): u32 {
     end)
   (memory $memory (export "memory") 0))
 ```
-
-</small>
 
 ---
 
