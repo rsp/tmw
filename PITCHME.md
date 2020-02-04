@@ -24,6 +24,10 @@ Solomon Hykes, founder and CTO of Docker<br>March, 2019 [on Twitter](https://twi
 
 ---
 
+# Writing
+
+---
+
 # AssemblyScript
 
 ```ts
@@ -50,9 +54,9 @@ export function factorial(n: u32): u32 {
 
 ---
 
-<small>
-
 # WAT
+
+<small>
 
 ```txt
 (module
@@ -78,7 +82,21 @@ export function factorial(n: u32): u32 {
 
 ---
 
-Browser
+# Now
+
+All browsers, Node, Deno
+
+# Soon
+
+WASI runtimes, Ethereum blockchain
+
+---
+
+# Using WASM
+
+---
+
+# Browser
 
 ```js
 (async () => {
@@ -91,7 +109,7 @@ Browser
 
 ---
 
-Node
+# Node
 
 ```js
 const fs = require('fs');
@@ -112,7 +130,7 @@ $ node node.js
 
 ---
 
-Deno
+# Deno
 
 ```ts
 const buffer = await Deno.readFile('main.wasm');
@@ -135,9 +153,9 @@ $ deno run --allow-read=main.wasm deno.ts
 
 ---
 
-# WASI
+# AssemblyScript
 
-[wasi.dev](https://wasi.dev/)
+[assemblyscript.org](https://assemblyscript.org/)
 
 ---
 
@@ -153,16 +171,23 @@ $ deno run --allow-read=main.wasm deno.ts
 
 ---
 
-# Can I use WASM
+# WASI
 
-[caniuse.com/wasm](https://caniuse.com/wasm)
+WebAssembly System Interface
 
-Global: 88.53%, Poland: 92.81%
+[wasi.dev](https://wasi.dev/)
 
-Supported in:
-Edge, Firefox, Chrome, Safari, Opera, iOS Safari, Android Browser,
-Opera Mobile, Chrome for Android, Firefox for Android,
-Samsung Internet
+---
+
+# eWASM
+
+Ethereum WebAssembly
+
+[ewasm.readthedocs.io](https://ewasm.readthedocs.io/)
+
+[github.com/ewasm/design](https://github.com/ewasm/design)
+
+"eWASM is a restricted subset of WASM to be used for contracts in Ethereum"
 
 ---
 
@@ -196,108 +221,24 @@ A Bytecode Alliance project
 
 ---
 
-WAT - WebAssembly Text Format
-
-WABT - WebAssembly Binary Toolkit
-
-WASM - WebAssembly Binary Format
-
----
-
-# WASM tools
-
-[Emscripten](https://emscripten.org/) - LLVM compiler backend targetting JS, asm.js and WASM
-
-[WABT](https://github.com/WebAssembly/wabt) - The WebAssembly Binary Toolkit
-
-[Binaryen](https://github.com/WebAssembly/binaryen) - Compiler and toolchain infrastructure
-
-emcc - Emscripten Compiler Frontend (similar to gcc)
-
----
-
-# Emscripten
-
-[emscripten.org](https://emscripten.org/)
-
-- compiles C and C++ to JS/asm.js/WASM
-- compiles any language translated into LLVM bitcode
-- compile C/C++ runtimes of other languages (e.g. Python, Lua)
-
----
-
-# AssemblyScript
-
-[assemblyscript.org](https://assemblyscript.org/)
-
----
-
-# BONUS
-
----
-
-# GitHub Actions
-
-- [github.com/features/actions](https://github.com/features/actions)
-- [help.github.com/actions](https://help.github.com/actions)
-
-Linux, macOS, Windows, ARM, containers
-
-(GitHub-hosted and self-hosted)
-
----
-
-# Not yet
-
-Operator overloading in JS
-
-[github.com/tc39/proposal-operator-overloading](https://github.com/tc39/proposal-operator-overloading)
-
-Status: Stage 0; to be presented at the December 2019 TC39 meeting
-
----
-
-# Maybe some day
-
-Proper Tail Calls (PTC)
-
-vs.
-
-Syntactic Tail Calls (STC)
-
-[github.com/tc39/proposal-ptc-syntax](https://github.com/tc39/proposal-ptc-syntax)
-
----
-
-# MORE INFO
-
----
-
-# WASM and WASI
-
-Watch all presentations by:
-
-- Lin Clark
-- Steve Klabnik
-
----
-
-# TC39
-
-Ecma International
-
-"We develop the JavaScript (formally, ECMAScript) specification on GitHub"
-
-[tc39.es](https://tc39.es/)
-
----
-
 # W3C
 
 - [w3.org/community/webassembly](https://www.w3.org/community/webassembly/)
 - [webassembly.github.io/spec](https://webassembly.github.io/spec/)
 - [github.com/WebAssembly](https://github.com/WebAssembly)
 - [github.com/WebAssembly/proposals](https://github.com/WebAssembly/proposals)
+
+---
+
+Ethereum
+
+[EVM 2.0: Inside the Race to Replace the Heart of Ethereum](https://www.coindesk.com/open-heart-surgery-inside-ethereums-crucial-replacement-of-the-evm)<br>by Rachel Rose O'Leary, 2018
+
+"the current EVM will be replaced by a new virtual machine called eWASM."
+
+[Ethereum 2.0: A Complete Guide. Ewasm.](https://medium.com/chainsafe-systems/ethereum-2-0-a-complete-guide-ewasm-394cac756baf)<br> by Colin Schwarz, 2019
+
+"Ewasm will replace the EVM as the state execution engine of the Ethereum network and is expected to be one of the final aspects of Eth 2.0 to be integrated."
 
 ---
 
