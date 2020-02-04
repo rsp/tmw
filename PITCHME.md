@@ -232,7 +232,9 @@ Ethereum
 
 [Ethereum 2.0: A Complete Guide. Ewasm.](https://medium.com/chainsafe-systems/ethereum-2-0-a-complete-guide-ewasm-394cac756baf)<br> by Colin Schwarz, 2019
 
+<small>
 "Ewasm will replace the EVM as the state execution engine of the Ethereum network and is expected to be one of the final aspects of Eth 2.0 to be integrated."
+</small>
 
 ---
 
