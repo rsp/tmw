@@ -57,7 +57,8 @@ export function factorial(n: u32): u32 {
 ```txt
 (module
   (type $t0 (func (param i32) (result i32)))
-  (func $factorial (export "factorial") (type $t0) (param $p0 i32) (result i32)
+  (func $factorial (export "factorial")
+    (type $t0) (param $p0 i32) (result i32)
     get_local $p0
     i32.const 1
     i32.lt_u
