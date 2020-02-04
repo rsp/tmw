@@ -139,7 +139,7 @@ $ deno run --allow-read=main.wasm deno.ts
 
 ---
 
-# AssemblyScript vs TypeScript
+# AssemblyScript<br>vs TypeScript
 
 - no any, no undefined, no union types
 - no `let x = {}`
