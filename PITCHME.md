@@ -50,6 +50,8 @@ WASM
 
 ---
 
+<small>
+
 ```txt
 (module
   (type $t0 (func (param i32) (result i32)))
@@ -69,6 +71,8 @@ WASM
     end)
   (memory $memory (export "memory") 0))
 ```
+
+</small>
 
 ---
 
