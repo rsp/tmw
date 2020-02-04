@@ -185,6 +185,22 @@ Ethereum WebAssembly
 
 ---
 
+EVM 2.0
+
+[EVM 2.0: Inside the Race to Replace the Heart of Ethereum](https://www.coindesk.com/open-heart-surgery-inside-ethereums-crucial-replacement-of-the-evm)<br>by Rachel Rose O'Leary, 2018
+
+<small>
+"the current EVM will be replaced by a new virtual machine called eWASM."
+</small>
+
+[Ethereum 2.0: A Complete Guide. Ewasm.](https://medium.com/chainsafe-systems/ethereum-2-0-a-complete-guide-ewasm-394cac756baf)<br> by Colin Schwarz, 2019
+
+<small>
+"Ewasm will replace the EVM as the state execution engine of the Ethereum network and is expected to be one of the final aspects of Eth 2.0 to be integrated."
+</small>
+
+---
+
 WebAssembly 1.0 has shipped in<br>4 major browser engines.
 
 Chrome, Edge, Firefox, and WebKit,<br>have reached consensus.
@@ -221,20 +237,6 @@ A Bytecode Alliance project
 - [webassembly.github.io/spec](https://webassembly.github.io/spec/)
 - [github.com/WebAssembly](https://github.com/WebAssembly)
 - [github.com/WebAssembly/proposals](https://github.com/WebAssembly/proposals)
-
----
-
-Ethereum
-
-[EVM 2.0: Inside the Race to Replace the Heart of Ethereum](https://www.coindesk.com/open-heart-surgery-inside-ethereums-crucial-replacement-of-the-evm)<br>by Rachel Rose O'Leary, 2018
-
-"the current EVM will be replaced by a new virtual machine called eWASM."
-
-[Ethereum 2.0: A Complete Guide. Ewasm.](https://medium.com/chainsafe-systems/ethereum-2-0-a-complete-guide-ewasm-394cac756baf)<br> by Colin Schwarz, 2019
-
-<small>
-"Ewasm will replace the EVM as the state execution engine of the Ethereum network and is expected to be one of the final aspects of Eth 2.0 to be integrated."
-</small>
 
 ---
 
