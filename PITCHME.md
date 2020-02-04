@@ -179,7 +179,9 @@ Ethereum WebAssembly
 
 [github.com/ewasm/design](https://github.com/ewasm/design)
 
+<small>
 "eWASM is a restricted subset of WASM to be used for contracts in Ethereum"
+</small>
 
 ---
 
