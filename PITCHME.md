@@ -68,8 +68,7 @@ WASM
       call $factorial
       get_local $p0
       i32.mul
-    end)
-  (memory $memory (export "memory") 0))
+    end) (memory $memory (export "memory") 0))
 ```
 
 </small>
