@@ -24,7 +24,7 @@ Solomon Hykes, founder and CTO of Docker<br>March, 2019 [on Twitter](https://twi
 
 ---
 
-AssemblyScript
+# AssemblyScript
 
 ```ts
 export function factorial(n: u32): u32 {
@@ -34,7 +34,7 @@ export function factorial(n: u32): u32 {
 
 ---
 
-WASM
+# WASM
 
 ```txt
 00000000: 0061 736d 0100 0000 0106 0160 017f 017f  .asm.......`....
@@ -51,6 +51,8 @@ WASM
 ---
 
 <small>
+
+# WAT
 
 ```txt
 (module
