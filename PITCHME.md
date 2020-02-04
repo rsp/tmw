@@ -161,6 +161,16 @@ Array, ArrayBuffer, DataView, Date, Error, Map, Math, Number, Set, String, Typed
 
 ---
 
+# Null and Undefined
+
+Basic types cannot be nullable, but class and function types can.
+
+Appending `| null` declares a nullable type.
+
+There is no `undefined` in AssemblyScript.
+
+---
+
 # WASM
 
 [webassembly.org](https://webassembly.org/)
